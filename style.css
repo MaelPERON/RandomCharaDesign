@@ -14,6 +14,9 @@ body {
     background-color: #101010;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* NAVBAR */
@@ -49,3 +52,15 @@ body {
 }
 
 /* VIEWER */
+#viewer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#viewer-img {
+    max-width: 100%;
+}
