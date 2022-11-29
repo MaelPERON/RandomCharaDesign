@@ -15,3 +15,34 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 2rem;
+    background-color: var(--01);
+    align-items: center;
+}
+
+.nav-group,
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: min-content;
+}
+
+.nav-item[action] {
+    background-color: var(--02);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-item[action]:hover {
+    cursor: pointer;
+    background-color: var(--03);
+}
