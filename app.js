@@ -11,6 +11,7 @@ function restart() {}
 function togglePause() {}
 function move() {}
 function stop() {}
+function randomImage() { return "https://picsum.photos/1920/1080" }
 function setFilterMode(mode=false) {}
 function setPreviewMode(mode=false) { document.querySelector('.preview-wrapper').style.display = mode ? "block" : "none"; document.querySelector('.preview-toggle').style['border-radius'] = `10px${mode ? " 10px 0 0" : ''}`; previewOn = mode; }
 
