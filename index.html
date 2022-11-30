@@ -17,7 +17,7 @@
             <li class="nav-item" action="stop">Stop</li>
             <li class="nav-item" action="next">Next</li>
         </div>
-        <li class="nav-item"><p id="current-time">XX:XX:XX</p>/<input type="text"></li>
+        <li class="nav-item"><p id="current-time">XX:XX:XX</p>/<input type="text" action="edit-time"></li>
         <li class="nav-item" action="filter-toggle">Filter</li>
     </ul>
     <div id="viewer">
@@ -27,7 +27,7 @@
     </div>
     <div id="preview">
         <div class="preview-toggle" style="border-radius: 10px;">
-            <input type="checkbox">
+            <input type="checkbox" action="toggle-preview">
             Prochaine image
         </div>
         <div class="preview-wrapper" style="display: none;">
