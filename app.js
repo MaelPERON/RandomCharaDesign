@@ -4,7 +4,6 @@ var viewerText;
 var previewImage;
 var index = -1;
 var actions = [];
-var inputs = [];
 var filterOn = true;
 var previewOn = true;
 
