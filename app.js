@@ -30,7 +30,7 @@ function loadImage(i) {
     previewImage.src = images[i+1][0]
     viewerText.innerHTML = images[i][1]
 }
-function randomImage() { return "https://picsum.photos/1920/1080" }
+function randomImage(i) { return "https://picsum.photos/1920/1080?random=" + i }
 function setFilterMode(mode=false) {}
 function setPreviewMode(mode=false) { document.querySelector('.preview-wrapper').style.display = mode ? "block" : "none"; document.querySelector('.preview-toggle').style['border-radius'] = `10px${mode ? " 10px 0 0" : ''}`; previewOn = mode; }
 
