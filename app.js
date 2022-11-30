@@ -27,7 +27,7 @@ function loadImage(i) {
     if(i >= images.length) throw Error(`Can't load image n°${i}, too high! (${images.length-1} max)`)
     if(i == (images.length - 1)) newImage();
     viewerImage.src = images[i][0]
-    previewImage.src = images[i+1][1]
+    previewImage.src = images[i+1][0]
     viewerText.innerHTML = images[i][1]
 }
 function randomImage() { return "https://picsum.photos/1920/1080" }
