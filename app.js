@@ -15,7 +15,7 @@ function restart() {
         viewerImage.style.display = "block";
         viewerText.style.display = "block";
     }
-    images = [...Array(2).keys()].map(i => [`https://picsum.photos/1920/1080?random=${i}`,i]);
+    [...Array(2).keys()].forEach(i => newImage());
     index = 0;
     loadImage(index)
 }
@@ -29,6 +29,9 @@ function loadImage(i) {
     viewerImage.src = images[i][0]
     previewImage.src = images[i+1][0]
     viewerText.innerHTML = images[i][1]
+}
+function newImage() {
+    images.push([randomImage(images.length), images.length])
 }
 function randomImage(i) { return "https://picsum.photos/1920/1080?random=" + i }
 function setFilterMode(mode=false) {}
