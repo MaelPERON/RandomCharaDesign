@@ -1,6 +1,7 @@
 var images = [];
 var viewerImage;
 var viewerText;
+var previewImage;
 var index = -1;
 var actions = [];
 var inputs = [];
@@ -35,6 +36,7 @@ function newAction(e) {
 document.addEventListener("DOMContentLoaded", () => {
     viewerImage = document.querySelector('#viewer-img')
     viewerText = document.querySelector('#viewer-text')
+    previewImage = document.querySelector('#preview-img')
 
     setPreviewMode(document.querySelector('[action="toggle-preview"]').checked)
     setFilterMode(false)
