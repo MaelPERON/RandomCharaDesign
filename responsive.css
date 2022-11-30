@@ -3,6 +3,12 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        opacity: 0.5;
+    }
+
+    .preview-wrapper {
+        width: unset;
+        height: 30vh;
     }
 }
 
