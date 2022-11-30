@@ -7,6 +7,9 @@ var actions = [];
 var filterOn = true;
 var previewOn = true;
 
+var timer;
+var timerLength = 10
+
 function restart() {
     startButton = document.querySelector('[action="start"]');
     if(startButton) {
