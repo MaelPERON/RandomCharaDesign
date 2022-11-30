@@ -21,8 +21,6 @@ function restart() {
     index = 0;
     loadImage(index)
 }
-function togglePause() {}
-function move() {}
 function stop() {}
 function loadImage(i) {
     if(i < 0) throw Error(`Can't load image at index below zero (${i})`)
