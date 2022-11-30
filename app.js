@@ -38,13 +38,24 @@ function newAction(e) {
     obj = e.currentTarget;
     switch(obj.getAttribute('action')) {
         case "start":
+            restart();
+            break;
         case "play":
         case "resume":
         case "stop":
+        case "previous":
+            if(index < 1) break;
+            index--;
+            loadImage(index);
+            break;
         case "next":
+            index++;
+            loadImage(index);
+            break;
         case "toggle-filter":
         case "toggle-preview":
-        case "previous":
+            setPreviewMode(!previewOn);
+            break;
         case "edit-time":
             alert(obj.getAttribute('action'))
             break;
