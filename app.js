@@ -8,7 +8,17 @@ var inputs = [];
 var filterOn = true;
 var previewOn = true;
 
-function restart() {}
+function restart() {
+    startButton = document.querySelector('[action="start"]');
+    if(startButton) {
+        startButton.parentElement.removeChild(startButton);
+        viewerImage.style.display = "block";
+        viewerText.style.display = "block";
+    }
+    images = [...Array(2).keys()].map(i => [`https://picsum.photos/1920/1080?random=${i}`,i]);
+    index = 0;
+    loadImage(index)
+}
 function togglePause() {}
 function move() {}
 function stop() {}
