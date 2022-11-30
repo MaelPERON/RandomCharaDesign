@@ -22,10 +22,17 @@
     </ul>
     <div id="viewer">
         <a action="start">Start</a>
+        <img id="viewer-img" style="display:none">
+        <p id="viewer-text" style="display:none">Lorem ipsum dolor - sit amet (c 2022)</p>
     </div>
-    <ul id="preview">
-        <li class="nav-item"><input type="checkbox">Hidden?</li>
-        <img src="" alt="">
-    </ul>
+    <div id="preview">
+        <div class="preview-toggle" style="border-radius: 10px;">
+            <input type="checkbox">
+            Prochaine image
+        </div>
+        <div class="preview-wrapper" style="display: none;">
+            <img id="preview-img">
+        </div>
+    </div>
 </body>
 </html>
