@@ -8,8 +8,9 @@ function restart() {}
 function togglePause() {}
 function move() {}
 function stop() {}
-function toggleFilter() {}
-function togglePreview() {}
+function setFilterMode(mode=false) {}
+function setPreviewMode(mode=false) { document.querySelector('.preview-wrapper').style.display = mode ? "block" : "none"; document.querySelector('.preview-toggle').style['border-radius'] = `10px${mode ? " 10px 0 0" : ''}`; previewOn = mode; }
+
 function newAction(e) {
     obj = e.currentTarget;
     switch(obj.getAttribute('action')) {
@@ -28,8 +29,8 @@ function newAction(e) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    toggleFilter()
-    togglePreview()
+    setPreviewMode(document.querySelector('[action="toggle-preview"]').checked)
+    setFilterMode(false)
 
     actions = Array.from(document.querySelectorAll('[action]'))
     actions.filter(a => a.tagName != "INPUT").forEach(action => {
